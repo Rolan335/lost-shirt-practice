@@ -9,6 +9,10 @@ a{
     color: #212121;
 }
 
+ul{
+    list-style: none;
+}
+
 body{
     width: 100%;
     min-width: 1650px;
@@ -71,7 +75,7 @@ body{
     padding-top: 130px;
 }
 
-.nav{
+.goods-nav{
     margin: 0 auto;
     margin-bottom: 120px;
     width: 970px;
@@ -169,7 +173,8 @@ body{
     color: #ffc92f;
     font-family: "Yanone Kaffeesatz";
     font-size: 24px;
-    padding: 9px 28px;
+    padding: 10px 28px;
+    text-transform: uppercase;
 }
 
 .shirt__btn{
@@ -197,8 +202,8 @@ body{
     transform: rotate(183deg) translateY(-3px);
 }
 
-.shirt__item_size-big .shirts__price{
-    border-color: #ffc92f;
+.shirts__price_yellow{
+    border-bottom-color: #ffc92f;
     color: #212121;
 }
 
@@ -248,4 +253,105 @@ body{
     width: 275px;
     font-size: 15px;
     margin-bottom: 32px;
+    line-height: 22px;
 }
+
+.footer{
+    padding-top: 145px;
+    background-color: #fcf5e6;
+}
+
+.container_footer{
+    width: 1140px;
+}
+
+.main-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column__title{
+    font-family: "Yanone Kaffeesatz";
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 33px;
+}
+
+.column__list{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column__link{
+    color: #737373;
+    font-size: 15px;
+}
+
+.column__link:hover{
+    color: #d82727;
+}
+
+.column_contacts{
+    font-size: 15px;
+    text-align: left;
+}
+
+.column__adress{
+    width: 145px;
+    line-height: 20px;
+}
+
+.column__tel{
+    margin: 38px 0 10px 0; 
+    display: block;
+}
+
+.bottom{
+    padding: 125px 0 95px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom__block{
+    width: 536px;
+    height: 200px;
+}
+
+.bottom__block_title{
+    background-color: #232323;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom__title{
+    color: #ffffff;
+    width: 274px;
+    height: 91px;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.bottom__block_social{
+    background: url("../img/pattern.png");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 125px;
+}
+
+.bottom__link:hover .bottom__icon{
+    fill: #d82727;
+}
+
+.bottom__icon{
+    width: 38px;
+    height: 38px;
+}
+
+
