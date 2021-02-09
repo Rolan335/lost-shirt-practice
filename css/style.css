@@ -426,3 +426,9 @@ body{
 }
 
 
+.collection-box__text{
+    margin-top: 16px;
+    width: 275px;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
