@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    min-width: 1460px;
+    width: 100%;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.header{
+    height: 180px;
+    background: url(../img/hero.jpg) 50% 50% / cover;
+    overflow: hidden;
+}
+
+.container-1{
+    width: 1340px;
+    height: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__pic{
+    position: relative;
+    top: 30px;
+}
+
+.mail{
+    width: 229px;
+    text-align: center;
+}
+
+.mail__text-top{
+    margin-bottom: 5px;
+}
+
+.mail__text-bottom{
+    width: 100%;
+    background: #212121;
+    color: #ffbc2f;
+    padding: 8px 4px;
+}
+
+.product{
+    height: 760px;
+    padding-top: 90px;
+    background-color: #fcf5e6;
+}
+
+.container{
+    width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.product__wrapper{
+    display: flex;
+    border: 10px solid #ffc92f;
+    height: 670px;
+}
+
+.shirt{
+    width: 50%;
+    position: relative;
+    background-color: #ffc92f;
+}
+
+.shirt__color{
+    position: absolute;
+    top: 120px;
+    left: 25px;
+    width: 495px;
+    height: 445px;
+}
+
+.shirt__color_active{
+    z-index: 2;
+}
+
+.shirt-info{
+    width: 50%;
+}
+
+.shirt-info__block{
+    width: 100%;
+    border-bottom: 2px solid #e8e1d0;
+    padding: 26px 0 0 26px;
+}
+
+.shirt-name{
+    height: 180px;
+}
+
+.shirt-name__text-top{
+    color: #fcba2e;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.shirt-name__title{
+    color: #1b1b1b;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 47px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 2.5px;
+    margin: 2px 0;
+}
+
+.price{
+    width: 95px;
+    height: 45px;
+    background-color: #ffc92f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price__number{
+    color: #212121;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.shirt-description{
+    height: 230px;
+}
+
+.shirt-description__list{
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shirt-description__item{
+    color: #1b1b1b;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.shirt-order{
+    height: 240px;
+    border-bottom: none;
+}
+
+.sizes{
+    display: flex;
+}
+
+.sizes__item{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e8e1d0;
+    margin-right: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.sizes__item_not-in-stock{
+    color: #e8e1d0;
+    cursor: default;
+}
+
+.sizes__item_active{
+    background-color: #ffc92f;
+    border-color: #ffc92f;
+}
+
+.color{
+    display: flex;
+    margin-top: 28px;
+}
+
+.color__item{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.color__item_black {
+    background-color: #2f2c25;
+}
+
+.color__item_white {
+    border: 3px solid #e8e1d0;
+}
+
+.color__item_green {
+    background-color: #529029;
+}
+
+.color__item_blue {
+    background-color: #39498d;
+}
+
+.color__item_red {
+    background-color: #d82727;
+}
+
+.color__item_active {
+    box-shadow: 0px 0px 0 4px #fed04d;
+}
+
+.shirt-order__btn{
+    margin-top: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    color: #fdc72f;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.shirt-order__btn:hover{
+    background-color: #d82727;
+    color: #ffffff;
+}
+
+.info{
+    padding-top: 90px;
+    background-color: #fcf5e6;
+}
+
+.info-nav{
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 675px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.info-nav__item:hover{
+    color: #d82727;
+}
+
+.info-nav__item_active{
+    background-color: #1b1b1b;
+    color: #ffc92f;
+    padding: 6px 17px;
+}
+
+.info-nav__item_active:hover{
+    color: #ffc92f;
+}
+
+.info-logo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__text-wrapper{
+    width: 744px;
+    border-left: 2px solid #e8e1d0;
+    padding: 48px 0 0 46px;
+}
+
+.info__text{
+    max-width: 600px;
+    margin-bottom: 16px;
+}
+
+.description__list{
+    margin: 38px 0 0 32px;
+    flex: 1;
+}
+
+.description__item{
+    width: 100%;
+    min-height: 20px;
+    margin-bottom: 24px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.description__icon{
+    width: 24px;
+    height: 17px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about__logo{
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.about__pic{
+    width: 225px;
+    height: 55px;
+}
+
+.info__text_about{
+    font-size: 14px;
+    line-height: 20.67px;
+}
+
+.block-table{
+    min-height: 455px;
+    overflow: hidden;
+}
+
+.info__block{
+    height: 300px;
+    border: 10px solid #ffc92f;
+    color: #1b1b1b;
+    font-size: 13px;
+    display: none;
+}
+
+.instruction{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instruction__pic{
+    width: 227px;
+    height: 203px;
+    margin: 48px 0;
+}
+
+.instruction__list{
+    width: 227px;
+}
+
+.table-wrapper{
+    width: 745px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table{
+    border: 1px solid #e8e1d0;
+    border-collapse: collapse;
+}
+
+.table_male{
+    min-height: 200px;
+}
+
+.table_female{
+    min-height: 240px;
+}
+
+.table__header, .table__data{
+    border: 1px solid #e8e1d0;
+    min-height: 58px;
+}
+
+.table__data{
+    min-width: 74px;
+    height: 44px;
+    text-align: center;
+}
+
+.table__row .table__header:first-child, .table__row .table__data:first-child{
+    min-width: 158px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.table__header{
+    background-color: #f6efe0;
+}
+
+.info__block_active{
+    display: flex;
+}
+
+.footer{
+    padding-top: 145px;
+    background-color: #fcf5e6;
+}
+
+.container{
+    width: 1140px;
+}
+
+.main-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column__title{
+    font-family: "Yanone Kaffeesatz";
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 33px;
+}
+
+.column__list{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column__link{
+    color: #737373;
+    font-size: 15px;
+}
+
+.column__link:hover{
+    color: #d82727;
+}
+
+.column_contacts{
+    font-size: 15px;
+    text-align: left;
+}
+
+.column__adress{
+    width: 145px;
+    line-height: 20px;
+}
+
+.column__tel{
+    margin: 38px 0 10px 0; 
+    display: block;
+}
+
+.bottom{
+    padding: 125px 0 95px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom__block{
+    width: 536px;
+    height: 200px;
+}
+
+.bottom__block_title{
+    background-color: #232323;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom__title{
+    color: #ffffff;
+    width: 274px;
+    height: 91px;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.bottom__block_social{
+    background: url("../img/pattern.png");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 125px;
+}
+
+.bottom__link:hover .bottom__icon{
+    fill: #d82727;
+}
+
+.bottom__icon{
+    width: 38px;
+    height: 38px;
+}

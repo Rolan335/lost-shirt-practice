@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="1460">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yanone+Kaffeesatz:wght@400;700&display=swap"
@@ -32,21 +32,43 @@
                 </div>
             </header>
             <div class="slider">
-                <img src="img/1_slide.png" alt="" class="slider__img">
+                <img src="img/1_slide.png" alt="" class="slider__img slider__img_visible">
+                <img src="img/2_slide.png" alt="" class="slider__img">
+                <img src="img/3_slide.png" alt="" class="slider__img">
             </div>
+            <aside class="menu">
+                <img src="img/logo-main.png" alt="" class="menu__logo">
+                <div class="menu__btn">
+                    <svg class="icon-open">
+                        <use class="icon-open__bar" xlink:href="img/icons-sprite.svg#bars"></use>
+                    </svg>
+                    <svg class="icon-close">
+                        <use class="icon-close__cross" xlink:href="img/icons-sprite.svg#cross"></use>
+                    </svg>
+                </div>
+                <nav class="menu__nav">
+                    <a href="#" class="menu__item">ДЕТСКАЯ КОЛЛЕКЦИЯ</a>
+                    <a href="#" class="menu__item">МУЖСКАЯ КОЛЛЕКЦИЯ</a>
+                    <a href="#" class="menu__item">ЖЕНСКАЯ КОЛЛЕКЦИЯ</a>
+                    <a href="#" class="menu__item">ПОПУЛЯРНЫЕ ПРИНТЫ</a>
+                    <a href="#" class="menu__item">НОВЫЕ ПРИНТЫ</a>
+                    <a href="#" class="menu__item">СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</a>
+                    <a href="#" class="menu__item">СКОРО В ПРОДАЖЕ</a>
+                </nav>
+            </aside>
         </div>
     </section>
     <section id="goods" class="goods">
         <div class="container">
             <nav class="goods-nav">
-                <a href="#" class="nav__item nav__item_active">Популярное</a>
-                <a href="#" class="nav__item">новинки</a>
-                <a href="#" class="nav__item">бестселлеры</a>
-                <a href="#" class="nav__item">специальные предложения</a>
-                <a href="#" class="nav__item">скоро в продаже</a>
+                <a href="#" data-filter="popular" class="nav__item nav__item_active">Популярное</a>
+                <a href="#" data-filter="new" class="nav__item">новинки</a>
+                <a href="#" data-filter="bestsellers" class="nav__item">бестселлеры</a>
+                <a href="#" data-filter="specials" class="nav__item">специальные предложения</a>
+                <a href="#" data-filter="soon" class="nav__item">скоро в продаже</a>
             </nav>
             <div class="shirts">
-                <div class="shirts__item">
+                <div class="shirts__item new specials soon">
                     <div class="shirt">
                         <img src="img/tshirt_01.png" alt="" class="shirt__img">
                         <div class="shirt__desc">
@@ -54,7 +76,7 @@
                                 Мужская футболка 3D с принтом
                                 Летающие черепахи
                             </p>
-                            <a href="#" class="shirt__btn btn">Подробнее</a>
+                            <a href="pages/product.html" class="shirt__btn btn">Подробнее</a>
                         </div>
                     </div>
                     <div class="shirts__price">
@@ -63,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shirts__item">
+                <div class="shirts__item new bestsellers specials">
                     <div class="shirt">
                         <img src="img/tshirt_02.png" alt="" class="shirt__img">
                         <div class="shirt__desc">
@@ -71,7 +93,7 @@
                                 Мужская футболка 3D с принтом
                                 Летающие черепахи
                             </p>
-                            <a href="#" class="shirt__btn btn">Подробнее</a>
+                            <a href="pages/product.html" class="shirt__btn btn">Подробнее</a>
                         </div>
                     </div>
                     <div class="shirts__price">
@@ -80,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shirts__item shirt__item_size-big">
+                <div class="shirts__item shirts__item_size-big new specials popular">
                     <div class="shirt">
                         <img src="img/tshirt_03.png" alt="" class="shirt__img">
                         <div class="shirt__desc">
@@ -88,7 +110,7 @@
                                 Мужская футболка 3D с принтом
                                 Летающие черепахи
                             </p>
-                            <a href="#" class="shirt__btn btn">Подробнее</a>
+                            <a href="pages/product.html" class="shirt__btn btn">Подробнее</a>
                         </div>
                     </div>
                     <div class="shirts__price shirts__price_yellow">
@@ -97,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shirts__item shirt__item_size-big shirt__item_move-up">
+                <div class="shirts__item shirts__item_size-big new bestsellers popular">
                     <div class="shirt">
                         <img src="img/tshirt_04.png" alt="" class="shirt__img">
                         <div class="shirt__desc">
@@ -105,7 +127,7 @@
                                 Мужская футболка 3D с принтом
                                 Летающие черепахи
                             </p>
-                            <a href="#" class="shirt__btn btn">Подробнее</a>
+                            <a href="pages/product.html" class="shirt__btn btn">Подробнее</a>
                         </div>
                     </div>
                     <div class="shirts__price shirts__price_yellow">
@@ -114,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shirts__item">
+                <div class="shirts__item new soon">
                     <div class="shirt">
                         <img src="img/tshirt_05.png" alt="" class="shirt__img">
                         <div class="shirt__desc">
@@ -122,7 +144,7 @@
                                 Мужская футболка 3D с принтом
                                 Летающие черепахи
                             </p>
-                            <a href="#" class="shirt__btn btn">Подробнее</a>
+                            <a href="pages/product.html" class="shirt__btn btn">Подробнее</a>
                         </div>
                     </div>
                     <div class="shirts__price">
@@ -131,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shirts__item">
+                <div class="shirts__item new soon bestsellers">
                     <div class="shirt">
                         <img src="img/tshirt_06.png" alt="" class="shirt__img">
                         <div class="shirt__desc">
@@ -139,7 +161,7 @@
                                 Мужская футболка 3D с принтом
                                 Летающие черепахи
                             </p>
-                            <a href="#" class="shirt__btn btn">Подробнее</a>
+                            <a href="pages/product.html" class="shirt__btn btn">Подробнее</a>
                         </div>
                     </div>
                     <div class="shirts__price">
@@ -182,7 +204,7 @@
         </div>
     </section>
     <footer id="footer" class="footer">
-        <div class="container container_footer">
+        <div class="container">
             <nav class="footer__nav">
                 <ul class="main-list">
                     <li class="column">
@@ -258,6 +280,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/filter.js"></script>
 </body>
 
 </html>
